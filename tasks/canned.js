@@ -19,7 +19,7 @@ module.exports = function (grunt) {
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
       port:'3000',
-      src: './'
+      src: './api'
     });
 
     var cannedOptions = {

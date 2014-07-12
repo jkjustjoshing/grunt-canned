@@ -37,53 +37,48 @@ grunt.initConfig({
 
 ### Options
 
-#### options.separator
+#### options.src
 Type: `String`
-Default value: `',  '`
+Default value: `./api`
 
-A string value that is used to do something with whatever.
+The directory that holds your mock API files. Defaults to a directory at the root of your project called `api`
 
-#### options.punctuation
-Type: `String`
-Default value: `'.'`
+#### options.port
+Type: `Integer`
+Default value: `3000`
 
-A string value that is used to do something else with whatever else.
+The port on which the canned mock API server will run.
 
 ### Usage Examples
 
 #### Default Options
-In this example, the default options are used to do something with whatever. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result would be `Testing, 1 2 3.`
+In this example, you should have mock API files in a folder at the root of your project called `api` and nothing else running on port 3000.
 
 ```js
 grunt.initConfig({
   canned: {
-    options: {},
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+    options: {}
   },
 })
 ```
 
 #### Custom Options
-In this example, custom options are used to do something else with whatever else. So if the `testing` file has the content `Testing` and the `123` file had the content `1 2 3`, the generated result in this case would be `Testing: 1 2 3 !!!`
+In this example, you should have mock API files in the folder `samples/test/api` in your project directory. The mock API server will run on port 7500.
 
 ```js
 grunt.initConfig({
   canned: {
     options: {
-      separator: ': ',
-      punctuation: ' !!!',
-    },
-    files: {
-      'dest/default_options': ['src/testing', 'src/123'],
-    },
+      src: './samples/test/api',
+      port: 7500
+    }
   },
 })
 ```
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
+If you see something that should be added to the canned feature set, or a bug with the functionality of the mock API
+server itself, please create a bug ticket with the [canned project](https://github.com/sideshowcoder/canned). If you find a problem with the grunt task itself, or a piece of functionality with the canned project that isn't accessible from this grunt task, submit a pull request!
 
 ## Release History
 _(Nothing yet)_
