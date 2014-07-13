@@ -1,6 +1,6 @@
 {
   "name": "grunt-canned",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Grunt wrapper around https://github.com/sideshowcoder/canned node module",
   "homepage": "http://github.com/jkjustjoshing/grunt-canned",
   "repository": "http://github.com/jkjustjoshing/grunt-canned",
@@ -26,7 +26,9 @@
     "grunt-contrib-nodeunit": "~0.3.0",
     "grunt": "~0.4.2",
     "jshint-stylish": "~0.1.5",
-    "load-grunt-tasks": "~0.3.0",
+    "load-grunt-tasks": "~0.3.0"
+  },
+  "dependencies": {
     "canned": "~0.2.2"
   },
   "scripts": {
