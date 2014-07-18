@@ -14,7 +14,7 @@ var canned = require('canned');
 module.exports = function (grunt) {
 
 
-  grunt.registerMultiTask('canned', 'Grunt wrapper around https://github.com/sideshowcoder/canned node module', function () {
+  grunt.registerTask('canned', 'Grunt wrapper around https://github.com/sideshowcoder/canned node module', function () {
 
     // Merge task-specific and/or target-specific options with these defaults.
     var options = this.options({
@@ -29,7 +29,8 @@ module.exports = function (grunt) {
 
     var cannedInstance = canned(options.src, cannedOptions);
 
-    http.createServec(cannedInstance).listen(options.port);
+    http.createServer(cannedInstance).listen(options.port);
+    console.log('Mock API server running at http://localhost:' + options.port + ', serving files from ' + options.src);
   });
 
 };
