@@ -24,7 +24,8 @@ module.exports = function (grunt) {
 
     var cannedOptions = {
       cors: true,
-      logger: process.stdout
+      logger: process.stdout,
+      cors_headers: options.cors_headers
     };
 
     var cannedInstance = canned(options.src, cannedOptions);
