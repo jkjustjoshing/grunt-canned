@@ -47,7 +47,7 @@ Default value: `3000`
 The port on which the canned mock API server will run.
 
 #### options.logger
-Type: `String` or `Boolean`
+Type: `Boolean`
 Default value: `process.stdout`
 
 Log access and error, set to `false` to disable logging.
@@ -59,8 +59,8 @@ Default value: `true`
 Enable or disable CORS headers
 
 #### options.cors_headers
-Type: `Array`
-Default value: `[]`
+Type: `Array` or `Boolean`
+Default value: `false`
 
 Customize headers to be sent, see canned [response.js](https://github.com/sideshowcoder/canned/blob/master/lib/response.js) for format
 
