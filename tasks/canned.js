@@ -23,9 +23,9 @@ module.exports = function (grunt) {
     });
 
     var cannedOptions = {
-      cors: true,
-      logger: process.stdout,
-      cors_headers: options.cors_headers
+      cors: options.cors || true,
+      logger: options.logger || process.stdout,
+      cors_headers: options.cors_headers || false
     };
 
     var cannedInstance = canned(options.src, cannedOptions);
