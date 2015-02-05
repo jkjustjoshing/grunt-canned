@@ -29,8 +29,8 @@
     "load-grunt-tasks": "~0.3.0"
   },
   "dependencies": {
-    "canned": "~0.2.2",
-    "watch" : ">=0.5.0"
+    "canned": "^0.3.2",
+    "watch": ">=0.5.0"
   },
   "scripts": {
     "test": "grunt test"
