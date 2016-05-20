@@ -1,5 +1,5 @@
 {
-  "name": "ftes-grunt-canned",
+  "name": "grunt-canned",
   "version": "0.0.5",
   "description": "Grunt wrapper around https://github.com/sideshowcoder/canned node module",
   "homepage": "http://github.com/jkjustjoshing/grunt-canned",
@@ -29,7 +29,7 @@
     "load-grunt-tasks": "~0.3.0"
   },
   "dependencies": {
-    "canned": "0.3.7",
+    "canned": "~0.3.7",
     "watch" : ">=0.5.0"
   },
   "scripts": {
